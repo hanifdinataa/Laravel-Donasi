@@ -1,0 +1,166 @@
+/* ===========================
+    GLOBAL SETTINGS
+=========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* ===========================
+    LAYOUT
+=========================== */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 230px;
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.admin-sidebar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-sidebar li {
+    margin-bottom: 10px;
+}
+
+.admin-sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.admin-sidebar a:hover {
+    color: #008c3a;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 25px;
+}
+
+/* ===========================
+    TITLES
+=========================== */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+    FORM ELEMENTS
+=========================== */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 8px 15px;
+    background: #007b3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #005e2c;
+}
+
+/* ===========================
+    TABLE
+=========================== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.table th {
+    background: #f0f0f0;
+    font-weight: bold;
+}
+
+/* ===========================
+    DASHBOARD CARDS
+=========================== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.dashboard-card {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+    LIST
+=========================== */
+.list-item {
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* ===========================
+    BADGE
+=========================== */
+.badge {
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.badge-success { background: #d4f8d4; color: #0d7b0d; }
+.badge-pending { background: #fde7b0; color: #b37a00; }
+.badge-failed  { background: #f8d4d4; color: #7b0d0d; }
